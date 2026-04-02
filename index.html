@@ -1,2 +1,32 @@
-<h1>Version 2</h1>
-<h2>Feature branch change</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCM Demo Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    SCM Project Demo
+</header>
+
+<div class="box">
+    <h1>Welcome</h1>
+    <p>This is a colorful HTML page for demonstrating Git version control.</p>
+    <button onclick="changeText()">Click Me</button>
+    <p id="text">Version 1</p>
+</div>
+
+<footer>
+    Created for SCM Demonstration
+</footer>
+
+<script>
+    function changeText() {
+        document.getElementById("text").innerText = "Button Clicked!";
+    }
+</script>
+
+</body>
+</html>
