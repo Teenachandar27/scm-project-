@@ -12,6 +12,8 @@
 </header>
 
 <div class="box">
+    <p id="feature">Feature not triggered</p>
+    <button onclick="featureChange()">Run Feature</button>
     <h1>Welcome</h1>
     <h2>UI Improved by Teena</h2>
     <p>This is a colorful HTML page for demonstrating Git version control.</p>
@@ -24,6 +26,9 @@
 </footer>
 
 <script>
+    function featureChange() {
+    document.getElementById("feature").innerText = "Feature executed!";
+}
     function changeText() {
         document.getElementById("text").innerText = "Button Clicked!";
     }
